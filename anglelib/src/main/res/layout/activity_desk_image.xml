@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeskImageActivity">
+
+    <com.example.anglelib.view.DeskView
+        android:id="@+id/dv"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_dec"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="36dp"
+            android:text="-"
+            android:layout_height="48dp"
+            />
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_add"
+            android:text="+"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="36dp"
+            android:layout_height="48dp"
+            />
+        <Button
+            android:id="@+id/bt_all_angle"
+            android:text="all"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bt_clear_last"
+            android:text="clear_last_true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/bt_zone"
+            android:text="zone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
